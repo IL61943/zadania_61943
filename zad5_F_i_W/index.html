@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illia Levchuk - CV</title>
+  <link id="theme-link" rel="stylesheet" href="red.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <header>
+        <h1>Illia Levchuk</h1>
+        <img src="CVphoto.jpg" alt="Zdjęcie profilowe Illia Levchuk">
+      </header>
+
+      <section>
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:googillia211@gmail.com">googillia211@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+48792911895">+48 792 911 895</a></p>
+        <p>Miasto: Warszawa</p>
+        <p>
+          GitHub:<br>
+          <a href="https://github.com/IL61943" target="_blank" rel="noopener noreferrer">
+            github.com/illialevchuk
+          </a>
+        </p>
+        <p>
+          LinkedIn:<br>
+          <a href="https://www.linkedin.com/in/illia-levchuk-a780902b1/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/Illia Levchuk
+          </a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Umiejętności</h2>
+        <ul>
+          <li>Profesjonalna obsługa gościa hotelowego</li>
+          <li>Obsługa systemów rezerwacyjnych (np. PMS)</li>
+          <li>Zarządzanie rezerwacjami i dokumentacją</li>
+          <li>Rozwiązywanie sytuacji konfliktowych</li>
+          <li>Komunikacja interpersonalna na wysokim poziomie</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Języki</h2>
+        <ul>
+          <li>Ukraiński - ojczysty</li>
+          <li>Polski</li>
+          <li>Angielski</li>
+          <li>Rosyjski</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="content">
+      <section class="controls" aria-label="Sterowanie stroną">
+        <button id="theme-toggle" type="button">Przełącz na green</button>
+        <button id="section-toggle" type="button" aria-controls="projects-section" aria-expanded="true">
+          Ukryj sekcję Projekty
+        </button>
+      </section>
+
+      <section>
+        <h2>O mnie</h2>
+        <p>
+          Jestem osobą odpowiedzialną i dobrze zorganizowaną, na co dzień pracuję w dziale Rezerwacji hotelu, gdzie odpowiadam za kompleksową obsługę gości, zarządzanie rezerwacjami. Swobodnie komunikuję się z klientami, również w języku angielskim. Cenię sobie profesjonalizm, dobrą organizację pracy oraz rozwój kompetencji - zarówno w obszarze obsługi klienta, jak i nowych technologii.
+        </p>
+      </section>
+
+      <section>
+        <h2>Doświadczenie</h2>
+
+        <article>
+          <h3>Houseman</h3>
+          <p>grudzień 2023 - grudzień 2024</p>
+          <p>Utrzymaniu czystości i standardów hotelowych</p>
+        </article>
+
+        <article>
+          <h3>Receptionist</h3>
+          <p>grudzień 2024 - marzec 2026</p>
+          <p>Kompleksowa obsługa gości, zarządzanie rezerwacjami</p>
+        </article>
+
+        <article>
+          <h3>Junior Reservation Specialist</h3>
+          <p>marzec 2026 - obecnie</p>
+          <p>Obsługa rezerwacji indywidualnych i grupowych</p>
+          <p>Przyjmowanie i obsługa zapytań mailowych oraz telefonicznych</p>
+          <p>Wprowadzanie i aktualizacja danych w systemie rezerwacyjnym</p>
+          <p>Sprawdzanie dostępności pokoi i przygotowywanie ofert</p>
+          <p>Obsługa rezerwacji grupowych dla klientów indywidualnych i korporacyjnych zgodnie z procedurami hotelu</p>
+          <p>Koordynacja szczegółów rezerwacji z innymi działami</p>
+          <p>Dbanie o poprawność danych i zgodność z obowiązującymi standardami</p>
+          <p>Utrzymywanie wysokiego poziomu obsługi klienta</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Edukacja</h2>
+        <p>Akademia Finansów i Biznesu Vistula - Informatyka (2022 - obecnie)</p>
+      </section>
+
+      <section id="projects-section">
+        <h2>Projekty</h2>
+        <ol>
+          <li>Bubble Boddies - web aplikacja</li>
+          <li>System zarządzania rezerwacjami online (praca dyplomowa)</li>
+        </ol>
+      </section>
+
+      <section class="contact-form-section" aria-labelledby="contact-form-heading">
+        <h2 id="contact-form-heading">Formularz kontaktowy</h2>
+        <p class="form-intro">Wszystkie pola są wymagane. Formularz działa wyłącznie po stronie przeglądarki.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="first-name">Imię</label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" required aria-describedby="first-name-error">
+              <p id="first-name-error" class="error-message" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="last-name">Nazwisko</label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" required aria-describedby="last-name-error">
+              <p id="last-name-error" class="error-message" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p id="email-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <button class="submit-button" type="submit">Wyślij wiadomość</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Illia Levchuk</p>
+  </footer>
+</body>
+</html>
