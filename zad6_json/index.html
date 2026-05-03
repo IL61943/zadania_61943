@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illia Levchuk - CV</title>
+
+  <!-- MOTYWY ZADANIE 3 -->
+  <link id="theme-link" rel="stylesheet" href="red.css">
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <header>
+      <h1>Illia Levchuk</h1>
+      <img src="CVphoto.jpg" alt="Zdjęcie profilowe Illia Levchuk">
+    </header>
+
+    <section>
+      <h2>Kontakt</h2>
+      <p>Email: <a href="mailto:googillia211@gmail.com">googillia211@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+48792911895">+48 792 911 895</a></p>
+      <p>Miasto: Warszawa</p>
+
+      <p>
+        GitHub:<br>
+        <a href="https://github.com/IL61943" target="_blank" rel="noopener noreferrer">
+          github.com/illialevchuk
+        </a>
+      </p>
+
+      <p>
+        LinkedIn:<br>
+        <a href="https://www.linkedin.com/in/illia-levchuk-a780902b1/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/Illia Levchuk
+        </a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Umiejętności</h2>
+      <ul id="skills-list"></ul>
+    </section>
+
+    <section>
+      <h2>Języki</h2>
+      <ul>
+        <li>Ukraiński - ojczysty</li>
+        <li>Polski</li>
+        <li>Angielski</li>
+        <li>Rosyjski</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="content">
+
+    <!-- KONTROLKI -->
+    <section class="controls">
+      <button id="theme-toggle" type="button">Przełącz motyw</button>
+      <button id="section-toggle" type="button">Ukryj sekcję Projekty</button>
+    </section>
+
+    <section>
+      <h2>O mnie</h2>
+      <p>
+        Jestem osobą odpowiedzialną i dobrze zorganizowaną, pracuję w hotelu
+        i rozwijam się w kierunku IT.
+      </p>
+    </section>
+
+    <section>
+      <h2>Doświadczenie</h2>
+
+      <article>
+        <h3>Houseman</h3>
+        <p>2023 - 2024</p>
+        <p>Utrzymanie czystości i standardów hotelowych</p>
+      </article>
+
+      <article>
+        <h3>Receptionist</h3>
+        <p>2024 - 2026</p>
+        <p>Obsługa gości i zarządzanie rezerwacjami</p>
+      </article>
+
+      <article>
+        <h3>Junior Reservation Specialist</h3>
+        <p>2026 - obecnie</p>
+        <p>Obsługa rezerwacji i kontakt z klientem</p>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>Edukacja</h2>
+      <p>Akademia Finansów i Biznesu Vistula – Informatyka</p>
+    </section>
+
+    <section id="projects-section">
+      <h2>Projekty</h2>
+      <ol id="projects-list"></ol>
+    </section>
+
+    <!-- FORMULARZ (zostaje jak był) -->
+    <section class="contact-form-section">
+      <h2>Formularz kontaktowy</h2>
+
+      <form id="contact-form" novalidate>
+
+        <div class="form-field">
+          <label for="first-name">Imię</label>
+          <input id="first-name" type="text" required>
+          <p id="first-name-error" class="error-message"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="last-name">Nazwisko</label>
+          <input id="last-name" type="text" required>
+          <p id="last-name-error" class="error-message"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" required>
+          <p id="email-error" class="error-message"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" rows="5" required></textarea>
+          <p id="message-error" class="error-message"></p>
+        </div>
+
+        <button type="submit">Wyślij</button>
+        <p id="form-status"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Illia Levchuk</p>
+</footer>
+
+</body>
+</html>
