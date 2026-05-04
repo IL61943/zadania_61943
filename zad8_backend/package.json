@@ -1,0 +1,10 @@
+{
+  "name": "zad8-backend",
+  "version": "1.0.0",
+  "description": "Zadanie 8 - formularz POST z zapisem danych po stronie serwera",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}
